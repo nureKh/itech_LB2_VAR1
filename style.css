@@ -1,0 +1,94 @@
+body {
+    margin: 0; /* Внешний отступ на всех четырёх сторонах */
+    font: 24px/1.2 "Times New Roman"; /* Размер шрифта/высота строки, семейство шрифтов */
+   }
+
+   .txt{
+    position: absolute; /* Абсолютное позиционирование */
+    top: 20%; /* Т.к. position: absolute, то в качестве родителя выступает окно браузера и положение элемента определяется от его верхнего края */
+    left: 80%; /* Положение от левого края */
+    transform: translate(-10%, -40%); /* Сдвигает элемент на заданное значение по горизонтали и вертикали. */
+}
+
+/* BUTTON */
+
+button {
+    background: #9400D3; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    border: none; /* Параметры рамки */
+    padding: .7rem 2rem; /* Поля вокруг текста */
+    box-shadow: 5px 5px 0 #000; /* Добавляет элементу тень */
+    position: relative; /* Относительное позиционирование */
+    left: 0; /* Положение от левого края */
+    top: 0; /* Положение от верхнего края */
+    transition: 1s; /* Устанавливает эффект перехода между двумя состояниями элемента 1s */
+   }
+   button:hover {
+    left: 5px; /* Положение от левого края */
+    top: 5px; /* Положение от верхнего края */
+    box-shadow: 0 0 0 #000; /* Тень */
+   }
+
+/* IMG RIGHT */
+
+#float-right-picture {
+    float: right; /*Определяет, по какой стороне будет выравниваться элемент, при этом остальные элементы будут обтекать его с других сторон*/
+    background: navy; /* Цвет фона */
+    padding: 3px; /* Поля вокруг текста */
+    margin: 10px; /* Внешний отступ на всех четырёх сторонах */
+    height: 50px; /* Высота */
+    width: 50px; /* Ширина */
+}
+
+/* RADIO BUTTONS */
+
+input[type=radio] + label {
+    color: black; /* Цвет текста */
+    font-size: 30px; /* Размер шрифта */
+    cursor: pointer; /* Курсор при наведении */
+}
+
+input[type=radio]:checked:first-of-type + label{
+    font-style: italic; /* Начертание шрифта */
+    color: lime; /* Цвет текста */
+}
+
+input[type=radio]:checked:nth-of-type(2) + label{
+    font-style: italic; /* Начертание шрифта */
+    color: blue; /* Цвет текста */
+}
+
+input[type=radio]:checked:last-of-type + label{
+    font-style:italic; /* Начертание шрифта */
+    color:gold; /* Цвет текста */
+}
+
+/* CONTAINER WITH ELEMENTS */
+
+#main-block {
+    width: auto; /* Ширина будет равна внутреннему содержанию */
+    display: flex; /* Элемент ведёт себя как блочный и выкладывает содержимое согласно флекс-модели */
+    background-color: gray; /* Цвет фона блока */
+    align-items: center; /* Центрирование элемента по вертикальной оси*/
+    justify-content: center; /* Центрирование элемента по горизонтальной оси*/
+}
+#block2 { 
+    margin: 10px; /* Внешний отступ на всех четырёх сторонах */
+    width: fit-content; /* Ширина */
+    height: fit-content; /* Высота */
+    background: darkblue; /* Цвет фона */
+}
+
+#block3 {
+    margin: 10px; /* Внешний отступ на всех четырёх сторонах */
+    width: fit-content; /* Ширина */
+    height: fit-content; /* Высота */
+    background: red; /* Цвет фона */
+}
+
+#block4 {
+    margin: 10px; /* Внешний отступ на всех четырёх сторонах */
+    width: fit-content; /* Ширина */
+    height: fit-content; /* Высота */
+    background: green; /* Цвет фона */
+}
